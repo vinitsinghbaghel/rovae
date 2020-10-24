@@ -1,0 +1,40 @@
+@media (max-width: 992px) and (min-width: 576px) {
+  #credential {
+    padding: 0 auto;
+
+    h4 {
+      font-size: 0.8rem;
+    }
+    p {
+      font-size: 0.6rem;
+    }
+  }
+}
+@media (max-width: 576px) {
+  #navigation {
+    .nav-item {
+      margin: 0 auto;
+
+      .nav-link {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  #special {
+    text-align: center;
+    .section-image {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  #testimonial {
+    .section-header {
+      text-align: start;
+    }
+  }
+}

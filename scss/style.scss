@@ -1,0 +1,274 @@
+// Overriding bootstrap CSS
+@import "../node_modules/bootstrap/scss/bootstrap";
+// Other Scss files
+@import "config";
+@import "mobile";
+// Gilde Carousel
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss";
+// General CSS
+body {
+  font-family: $font-stack; //_config.scss
+}
+.glide__arrow {
+  position: absolute;
+  display: block;
+  top: 50%;
+  z-index: 2;
+  color: #333;
+  text-transform: uppercase;
+  padding: 9px 12px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+
+// Start Header
+#header {
+  height: 600px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  background: transparent
+    linear-gradient(90deg, $primary-color 0%, $secondary-color 100%) 0% 0%
+    no-repeat padding-box;
+  opacity: 1;
+  color: $text-color;
+
+  .head-para {
+    text-transform: $first-letter-capital;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+
+    h2 {
+      text-transform: $first-letter-capital;
+    }
+  }
+
+  .author-img {
+    display: initial;
+  }
+
+  .author {
+    text-transform: $first-letter-capital;
+    display: inline-block;
+    padding: 0.7rem;
+
+    a {
+      color: $text-color;
+    }
+    a:hover {
+      color: #333;
+    }
+  }
+
+  .btn {
+    margin-top: 2rem;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px #0000005c;
+    border-radius: 12px;
+    width: 40%;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: -0.04rem;
+  }
+}
+// End Header
+// Start Credential
+#credential {
+  margin: -2.5rem 2.5rem 1rem;
+  padding: 2rem 0;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 15px;
+  opacity: 1;
+  position: relative;
+  z-index: 9;
+  text-align: center;
+  text-transform: $first-letter-capital;
+  color: #212123;
+
+  h4 {
+    color: #212123;
+  }
+  p {
+    color: #b1b1b1;
+  }
+}
+// End Credential
+// Start Navigation
+#navigation {
+  background: #eff48e;
+  margin-bottom: 6rem;
+  padding: 0.6rem 2rem;
+  text-transform: $first-letter-capital;
+
+  .nav-item {
+    padding-right: 1.2rem;
+    .nav-link {
+      color: #333;
+    }
+    .nav-link.active {
+      background-color: $primary-color;
+      color: #fff;
+    }
+  }
+}
+// End Navigation
+// Start About
+#about {
+  margin-bottom: 4rem;
+
+  .section-header {
+    margin-bottom: 2rem;
+    h2 {
+      color: #212123;
+    }
+    p {
+      font-weight: 500;
+    }
+  }
+
+  .section-box {
+    padding: 2rem 1rem;
+    border: 3px solid #d2e603;
+    border-radius: 42px;
+    opacity: 1;
+
+    .section-content {
+      display: inline;
+      padding: 0 0.2rem;
+
+      .section-image {
+        display: inline-block;
+      }
+
+      .section-title {
+        display: inline-block;
+      }
+    }
+  }
+}
+// End About
+// Start Testimonial
+#testimonial {
+  padding: 2rem 0;
+  background-color: #eff48e;
+  background-image: url("../assets/Group\ 523.png");
+  background-repeat: no-repeat;
+  .section-box {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    width: 80%;
+    padding: 1rem 1.2rem;
+    border: 3px solid #d2e603;
+    border-radius: 20px;
+    opacity: 1;
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
+// End Testimonial
+// Start Specialization
+#special {
+  margin: 0 auto;
+  padding: 4rem 0;
+  h1 {
+    margin-bottom: 2rem;
+  }
+  h2 {
+    text-transform: $first-letter-capital;
+  }
+  p {
+    font-weight: 300;
+  }
+  img {
+    padding-left: 2rem;
+    width: 50%;
+  }
+}
+// End Specialization
+// Start Courses
+#courses {
+  margin: 0 auto;
+  padding: 4rem 0;
+  background: #eff48e;
+
+  .section-header {
+    padding: 1rem 0;
+    img {
+      padding: 0.2rem;
+    }
+  }
+
+  .section-image {
+    img {
+      height: 100%;
+      width: 80%;
+    }
+  }
+}
+// End Courses
+// Start FAQ
+#faq {
+  background-color: #eff48e;
+  margin-top: 0.05rem;
+
+  .section-header {
+    padding: 2rem 0 2.4rem;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .section-content {
+    background: #fff;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+
+    .course {
+      border-radius: 2px;
+      padding: 1.5rem 1.5rem 0 1.5rem;
+      border-spacing: 0.25rem;
+      margin-bottom: 2rem;
+
+      .course-text {
+        display: none;
+      }
+      .show-text .course-text {
+        display: block;
+      }
+      .down-arrow {
+        display: none;
+      }
+      .show-text .down-arrow {
+        display: inline;
+      }
+      .show-text .up-arrow {
+        display: none;
+      }
+      p {
+        text-transform: capitalize;
+        display: inline;
+      }
+
+      .course-btn {
+        font-size: 1.5rem;
+        background: transparent;
+        border-color: transparent;
+        cursor: pointer;
+        display: inline;
+        float: right;
+      }
+      .course-btn:hover {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+// End FAQ
